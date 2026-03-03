@@ -7,8 +7,7 @@ BUILD_TIME := $(shell date -u '+%Y-%m-%d_%H:%M:%S')
 LDFLAGS := -ldflags="-w -s -X main.Version=$(VERSION) -X main.BuildTime=$(BUILD_TIME)"
 
 # Docker 相关变量
-DOCKER_USERNAME := jiongjiongJOJO
-DOCKER_IMAGE := $(DOCKER_USERNAME)/$(APP_NAME)
+DOCKER_IMAGE := $(APP_NAME)
 DOCKER_TAG := latest
 
 help: ## 显示帮助信息
